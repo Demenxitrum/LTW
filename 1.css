@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80px; /* Độ rộng của ô vuông */
+    height: 80px; /* Chiều cao của ô vuông */
+    background-color: red; /* Màu nền của ô vuông */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Màu chữ trong ô vuông */
+}
+
+#questionContainer {
+    margin-top: 20px;
+}
+
+#resultContainer {
+    margin-top: 20px;
+}

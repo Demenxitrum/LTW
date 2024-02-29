@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Thi Trắc Nghiệm </title>
+</head>
+<body>
+    <div class="container">
+        <div id="infoPage">
+            <h1>Thông tin người dùng</h1>
+            <form id="userForm">
+                <label for="fullName">Họ và tên:</label>
+                <input type="text" id="fullName" required>
+
+                <label for="dob">Ngày tháng năm sinh:</label>
+                <input type="date" id="dob" required>
+
+                <label for="studentID">Mã sinh viên:</label>
+                <input type="text" id="studentID" required>
+
+                <label for="class">Lớp:</label>
+                <input type="text" id="class" required>
+
+                <button type="button" onclick="startExam()">Bắt đầu</button>
+            </form>
+        </div>
+
+        <div id="examPage" style="display: none;">
+            <!-- Các câu hỏi sẽ được hiển thị ở đây -->
+            <div id="questionContainer"></div>
+
+            <button id="submitBtn" onclick="showResult()">Submit</button>
+        </div>
+
+        <div id="resultPage" style="display: none;">
+            <!-- Kết quả bài làm sẽ được hiển thị ở đây -->
+            <div id="resultContainer"></div>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
